@@ -31,29 +31,11 @@ while 1:
 
         chunk_template[a] = symbol[row][col]
    
-     '''
-     #for last 4 give extensions
-     
-     if chunk_length - x <= 4 :
-
-        tails = randint(7 , 9)
-        valid_tails = [t for t in range(0 , 95) if t not in symbol_positions]
-        
-        for c in range(tails) :
-           
-           row_ = randint(0,5)
-           col_ = randint(0,14)
-           pos = valid_tails[randint(0 , len(valid_tails)-1)]
-
-           chunk_template[pos] = symbol[row_][col_]
-
-     
-     '''      
+       
      final_line = " ".join(chunk_template)
      print(colored(final_line , "green" ))
      sleep(0.07)
 
-   #tails = randint(4 , 7)
-   #tail_insertions = [ randint(0 , len(symbol_positions) - 1 ) for z in range(tails)]
+  
 
 
