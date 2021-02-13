@@ -15,10 +15,10 @@ symbol = [
 
 while 1:
 
-   chunk_template = ["" for i in range(154)]
+   chunk_template = ["" for i in range(139)]
    chunk_length = randint(23 , 31)
-   positions_to_fill = randint(15,19)
-   symbol_positions = set([ randint(0 , 153) for j in range(positions_to_fill)])
+   positions_to_fill = randint(21 , 27)
+   symbol_positions = set([ randint(0 , 138) for j in range(positions_to_fill)])
    symbol_positions = list(symbol_positions)
 
 
@@ -35,7 +35,3 @@ while 1:
      final_line = " ".join(chunk_template)
      print(colored(final_line , "green" ))
      sleep(0.07)
-
-  
-
-
