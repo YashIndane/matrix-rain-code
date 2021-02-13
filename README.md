@@ -7,5 +7,5 @@ Requirements ->
 for linux machines
 
 ```  
-pip3 install  termcolor
+pip3 install termcolor
 ```
