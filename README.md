@@ -7,13 +7,13 @@ Requirements ->
 for linux machines
 
 ```  
-pip3 install termcolor
+$ pip3 install termcolor
 ```
 
 for running as a `mat` command in your terminal run this -
 
 ```
-bash matrix_command.sh
+$ bash matrix_command.sh
 ```
 
 Try it on PuTTy (full screen mode) for better experience
