@@ -12,13 +12,12 @@ symbol = [
            [u"\u30F0", u"\u30F1", u"\u30F2", u"\u30F3", u"\u30F4", u"\u30F5", u"\u30F6", u"\u30F7", u"\u30F8", u"\u30F9", u"\u30FB", u"\u30FC", u"\u30FD", u"\u30FE", u"\u30FF"]
          ]
 
-
 while 1:
 
    chunk_template = ["" for i in range(139)]
-   chunk_length = randint(23 , 31)
-   positions_to_fill = randint(21 , 27)
-   symbol_positions = set([ randint(0 , 138) for j in range(positions_to_fill)])
+   chunk_length = randint(23, 31)
+   positions_to_fill = randint(21, 27)
+   symbol_positions = set([ randint(0, 138) for j in range(positions_to_fill)])
    symbol_positions = list(symbol_positions)
 
 
@@ -26,12 +25,12 @@ while 1:
 
      for a in symbol_positions:
 
-        row = randint(0,5)
-        col = randint(0,14)
+        row = randint(0, 5)
+        col = randint(0, 14)
 
         chunk_template[a] = symbol[row][col]
    
        
      final_line = " ".join(chunk_template)
-     print(colored(final_line , "green" ))
+     print(colored(final_line, "green" ))
      sleep(0.07)
